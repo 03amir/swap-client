@@ -1,0 +1,67 @@
+.boxAdded {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 17% 17% 17% 17% 17%;
+  gap: 50px;
+  margin: auto;
+}
+
+.boxWrapper {
+  margin-bottom: 40px;
+}
+
+.boxHeading {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.boxWrapper button {
+  padding: 9px 17px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Inter";
+  font-weight: 800;
+  text-align: center;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.showMoreArrow {
+  font-size: 20px;
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 480px) {
+  .boxAdded {
+
+    grid-template-columns: none;
+
+
+  }
+
+  .boxHeading {
+
+    font-size: 14px;
+
+  }
+
+  .boxWrapper button {
+
+    font-size: 12px;
+  }
+
+}
