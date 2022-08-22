@@ -32,7 +32,7 @@ function AddProduct(props) {
   }, [user])
 
 
-  const [isUploading, setIsUploading] = useState(true);
+  const [isUploading, setIsUploading] = useState(false);
 
   async function submitHandlr(e) {
     e.preventDefault();
