@@ -150,7 +150,7 @@ function AllCategoryProduct(props) {
       <div className="allCategoryFrame">
 
       { isLoading? 
-<CircularProgress className="loader" size="60px"  color="success" />
+           <CircularProgress className="loader" size="60px"  color="success" />
        : 
         allCategoryProducts.length<=0? <h1 className="nodata">Sorry, No Product Found!</h1>: allCategoryProducts?.map((item) => {
           return <ProductCard item={item} />;
