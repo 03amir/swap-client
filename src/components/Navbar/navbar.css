@@ -48,6 +48,8 @@
     justify-content: center;
 }
 
+
+
 .logOutBtn {
     padding: 10px 20px;
     background-color: grey;
@@ -79,14 +81,23 @@
 
     }
 
-    .profile img {
+    .centerProfile img {
         height: 70%;
 
     }
 
-    .profile {
-        width: 25%;
+         .profile img {
+             height: 70%;
+    
+         }
+
+    .centerProfile {
+        width: 27%;
     }
+
+        .profile {
+            width: 27%;
+        }
 
     .logOutBtn {
         padding: 10px 10px;

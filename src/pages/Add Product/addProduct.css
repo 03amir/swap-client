@@ -58,7 +58,7 @@
   overflow: hidden;
 }
 
-.uploadButton{
+.uploadButton {
   width: 100%;
   height: 15%;
   /* display: inline-block; */
@@ -67,11 +67,9 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-
 }
 
-
-.imageBox img{
+.imageBox img {
   width: 100%;
   height: 80%;
   margin-top: 20px;
@@ -119,7 +117,7 @@ textarea {
 
 button[disabled] {
   cursor: progress;
-  background-color:black;
+  background-color: black;
   color: white;
 }
 
@@ -127,4 +125,55 @@ button[disabled]:hover {
   cursor: progress;
   background-color: black;
   color: white;
+}
+
+.uploading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 40px;
+  color: #3f6745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .inputBoxes select {
+    width: 101%;
+  }
+
+  .addDetailsFrame {
+    width: 80%;
+    padding: 40px 10px;
+    height: auto;
+  }
+
+  .addDetailsBox {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .inputBoxes {
+    width: 95%;
+    gap: 10px;
+  }
+
+  .imageBox {
+    width: 82%;
+  }
+
+  .descBox {
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  textarea {
+    width: 89.5%;
+  }
 }

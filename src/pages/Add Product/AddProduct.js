@@ -4,13 +4,15 @@ import FileBase from "react-file-base64";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../contex/UserContext";
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 
 function AddProduct(props) {
 
   const navigate = useNavigate();
 
-  const {user} = useContext(UserContext)
+  const { user } = useContext(UserContext)
 
   const [formDetails, setFormDetails] = useState({
     title: "",
@@ -24,13 +26,13 @@ function AddProduct(props) {
   });
 
   useEffect(() => {
-   if(!user){
-    navigate("/")
-   }
+    if (!user) {
+      navigate("/")
+    }
   }, [user])
-  
 
-  const [isUploading, setIsUploading] = useState(false);
+
+  const [isUploading, setIsUploading] = useState(true);
 
   async function submitHandlr(e) {
     e.preventDefault();
@@ -51,9 +53,10 @@ function AddProduct(props) {
         tag: formDetails.tag,
         brand: formDetails.brand,
       }, {
-      headers: {
-        Authorization: "Bearer" + localStorage.getItem("jwtSwap"),
-      }});
+        headers: {
+          Authorization: "Bearer" + localStorage.getItem("jwtSwap"),
+        }
+      });
       setIsUploading(false);
       alert("Product added succes fullly go to home page");
       navigate("/");
@@ -64,7 +67,7 @@ function AddProduct(props) {
     <>
       <form
         id="addProduct"
-        className="addDetailsFrame"
+        className={"addDetailsFrame"}
         onSubmit={(e) => {
           submitHandlr(e);
         }}
@@ -208,6 +211,15 @@ function AddProduct(props) {
             Add This Product
           </button>
         </div>
+
+
+        {
+          isUploading && <div className="uploading">
+            <CircularProgress size="60px" color="success" /> <span>Uploading...</span>
+          </div>
+        }
+
+
       </form>
 
     </>

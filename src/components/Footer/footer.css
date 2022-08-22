@@ -1,58 +1,63 @@
 .footerFrame {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: auto;
-    padding: 20px 10px;
-    margin-top: 90px;
-    margin-bottom: 60px;
-    position: relative;
-    color: black;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px 10px;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  position: relative;
+  color: black;
 }
 
 .footerFrame h1,
 .footerFrame p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .hr {
-    height: 3px;
-    background-color: black;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  height: 3px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footerLogo {
-    color: #3f6745;
-    text-align: center;
+  color: #3f6745;
+  text-align: center;
 }
 
 .footerLink {
-    text-decoration: none;
-    color: black;
-    font-family: "Inter";
-    font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-family: "Inter";
+  font-weight: 600;
 }
 
 .small {
-    font-size: 14px;
-    color: black;
-    font-weight: 300;
-    transform: translate(-70px, 3px);
+  font-size: 14px;
+  color: black;
+  font-weight: 300;
+  transform: translate(-70px, 3px);
 }
 
 @media screen and (max-width: 480px) {
-    .footerFrame {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .footerFrame {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .small {
-        transform: translate(0px, 0px);
-    }
+  .small {
+    transform: translate(0px, 0px);
+  }
+
+  .footerFrame {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
 }
