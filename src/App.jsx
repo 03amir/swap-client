@@ -14,7 +14,8 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-         <GoogleOAuthProvider clientId="595136115089-bjbmraoj1vhrmqhgqi2op3lcttaikr3v.apps.googleusercontent.com">
+
+    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
 
       <UserProvider>
         <BrowserRouter>

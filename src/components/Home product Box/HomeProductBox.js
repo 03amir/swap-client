@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import "./homeProductBox.css";
 import ProductCard from "../Product Card/ProductCard";
@@ -16,7 +17,12 @@ function HomeProductBox({ category, heading }) {
     setIsFetched(false);
 
     if (category == "all") {
-      const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/allproducts?category=all`);
+      let url = process.env.REACT_APP_BASE_URL+ '/allproducts?category=all'
+      console.log(url);
+      const res = await axios.get(url).catch(function (error) {
+        console.log("axios error")
+
+      });;
       setBoxProducts(res.data.data.reverse());
        setIsFetched(true);
       //  console.log(res.data.data.reverse())

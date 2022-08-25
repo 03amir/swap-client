@@ -1,9 +1,13 @@
 import React from 'react';
+import "./_404.css"
 
 function _404(props) {
     return (
-        <div>
-        <h3>Hello from the 404 page</h3>
+        <div className='errorFrame'>
+
+        <h1>Page not found.</h1>
+        
+        <img src="https://www.newyorker.com/static/error/error-404.png" alt="errorPage" />
             
         </div>
     );

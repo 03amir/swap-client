@@ -56,6 +56,9 @@ function AddProduct(props) {
         headers: {
           Authorization: "Bearer" + localStorage.getItem("jwtSwap"),
         }
+      }).catch (function (error) {
+        console.log("error")
+
       });
       setIsUploading(false);
       alert("Product added succes fullly go to home page");

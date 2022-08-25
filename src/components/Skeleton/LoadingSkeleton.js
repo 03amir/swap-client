@@ -2,7 +2,7 @@ import React from "react";
 import "./loadingComponent.css";
 
 function LoadingSkeleton(props) {
-  console.log("hello feom skeleton");
+  // console.log("hello feom skeleton");
 
   return (
     <>
