@@ -43,7 +43,7 @@ function AddProduct(props) {
       setIsUploading(true);
       let intPrice = parseInt(formDetails.price);
       let intCondition = parseInt(formDetails.condition);
-      const res = await axios.post(`${process.env.REACT_APP_REACT_APP_BASE_URL}/allproducts`, {
+      const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/allproducts`, {
         productImage: formDetails.productImage,
         price: intPrice,
         title: formDetails.title,
@@ -57,9 +57,10 @@ function AddProduct(props) {
           Authorization: "Bearer" + localStorage.getItem("jwtSwap"),
         }
       }).catch (function (error) {
-        console.log("error")
+        console.log(error)
 
       });
+      console.log(intCondition,intPrice)
       setIsUploading(false);
       alert("Product added succes fullly go to home page");
       navigate("/");
