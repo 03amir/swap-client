@@ -60,7 +60,6 @@ function AddProduct(props) {
         console.log(error)
 
       });
-      console.log(intCondition,intPrice)
       setIsUploading(false);
       alert("Product added succes fullly go to home page");
       navigate("/");
