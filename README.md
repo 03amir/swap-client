@@ -1,19 +1,18 @@
 
 # SWAP-CLIENT 
 
+#### Swap is a web-app to sell and buy used products for students.
+
 # backend at [swap-backend](https://github.com/03amir/swap-backend)
 
-# BadHouse
-
-Swap is a web-app to sell and buy used products for students.
 
 ## FEATURES
 
-### sign-in using google 
-### listing for sell product
-### browse all listed products
-### filters for listed products
-### logout
+### 1 sign-in using google 
+### 2 listing for sell product
+### 3 browse all listed products
+### 4 filters for listed products
+### 5 logout
 
 # Tech Stack
 
@@ -39,7 +38,9 @@ Swap is a web-app to sell and buy used products for students.
 ```
 ├── src/
     ├── components/         code for components
-    ├── Pages/              code for the pages
+    ├── pages/              code for the pages
+    ├── contex/             belongs to usercontex
+
    
 ```
 
