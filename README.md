@@ -1,5 +1,5 @@
 
-# Swap-Client  [Backend](https://www.youtube.com/watch?v=HtJKUQXmtok&t=93s).
+# Swap-Client || [Backend](https://www.youtube.com/watch?v=HtJKUQXmtok&t=93s)
 
 #### Swap is a web-app to sell and buy used products for students.
 
@@ -26,7 +26,7 @@
 
 # Pre-Requisite
 
-- Make sure you have an google OAouth client ID. [How to get client ID ? ](https://www.youtube.com/watch?v=HtJKUQXmtok&t=93s).
+- Make sure you have an google OAouth client ID. [How to get client ID ? ](https://www.youtube.com/watch?v=HtJKUQXmtok&t=93s)
 - Create an .env file in the root directry 
 - And write `REACT_APP_GOOGLE_CLIENT_ID=<your client id here >`
 
