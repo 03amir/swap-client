@@ -6,9 +6,13 @@
 # Features
    
     sign-in using google 
+    
     listing for sell product
+    
     browse all listed products
+    
     filters for listed products
+    
     logout
     
 
@@ -43,11 +47,11 @@
     ├── components/         code for components
     ├── pages/              code for the pages
     ├── contex/             belongs to usercontex
-
-   
+ 
 ```
 
 # Demo
+[Screencast from 02-09-22 12:02:14 AM IST.webm](https://user-images.githubusercontent.com/84488052/187988098-8a0760ef-94de-4c93-af01-0c8a3db387e6.webm)
 
 
 
