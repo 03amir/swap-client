@@ -1,28 +1,31 @@
 
-# SWAP-CLIENT 
+# Swap-Client  [Backend](https://www.youtube.com/watch?v=HtJKUQXmtok&t=93s).
 
 #### Swap is a web-app to sell and buy used products for students.
 
-# backend at [swap-backend](https://github.com/03amir/swap-backend)
-
-
-## FEATURES
-
-### 1 sign-in using google 
-### 2 listing for sell product
-### 3 browse all listed products
-### 4 filters for listed products
-### 5 logout
+# Features
+   
+    sign-in using google 
+    listing for sell product
+    browse all listed products
+    filters for listed products
+    logout
+    
 
 # Tech Stack
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+    CSS3
+    Javascript 
+    React
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+# Pre-Requisite
+
+- Make sure you have an google OAouth client ID. [How to get client ID ? ](https://www.youtube.com/watch?v=HtJKUQXmtok&t=93s).
+- Create an .env file in the root directry 
+- And write `REACT_APP_GOOGLE_CLIENT_ID=<your client id here >`
+
 
 # Setting Up
 
